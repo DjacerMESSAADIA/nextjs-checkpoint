@@ -127,12 +127,8 @@ export default function Skills() {
                           src={lang.icon}
                           alt={lang.name}
                           fill
-                          className="object-contain"
-                          style={{ filter: 'brightness(0) invert(1)', opacity: 0.9 }}
-                          onLoadingComplete={(img) => {
-                            img.style.filter = 'none';
-                            img.style.opacity = '1';
-                          }}
+                          className="object-contain transition-all duration-200 invert brightness-90 opacity-90"
+                          priority
                         />
                       </div>
                       <span className="text-sm font-medium text-center px-2">{lang.name}</span>
